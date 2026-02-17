@@ -31,7 +31,7 @@
         </p>
       </article>
 
-      <footer>
+      <footer class="share-content">
         <img
           class="avatar"
           src="images/avatar-michelle.jpg"
@@ -41,8 +41,35 @@
           <span>Michelle Appleton</span>
           <p>28 Jun 2020</p>
         </div>
-        <button><img src="images/icon-share.svg" alt="icon-share" /></button>
+        <button class="share-btn share-btn-open">
+          <img src="images/icon-share.svg" alt="icon-share" />
+        </button>
       </footer>
+      <div class="share-popup hidden">
+        <span class="share">SHARE</span>
+        <img
+          class="icon-page"
+          src="images/icon-facebook.svg"
+          alt="icon-facebook"
+        />
+        <img
+          class="icon-page"
+          src="images/icon-twitter.svg"
+          alt="icon-twitter"
+        />
+        <img
+          class="icon-page"
+          src="images/icon-pinterest.svg"
+          alt="icon-pinterest"
+        />
+        <button class="share-btn share-btn-close">
+          <img
+            class="icon-share"
+            src="images/icon-share.svg"
+            alt="icon-share"
+          />
+        </button>
+      </div>
     </main>
 
     <script src="main.js"></script>

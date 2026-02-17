@@ -7,6 +7,7 @@
 }
 
 body {
+  font-family: "Manrope", sans-serif;
   background-color: hsl(210, 46%, 95%);
   display: flex;
   flex-direction: column;
@@ -16,55 +17,117 @@ body {
 }
 
 main {
-  width: 330px;
+  width: 88vw;
+  max-width: 21.875rem;
   background-color: white;
-  border-radius: 10px;
+  border-radius: 0.625rem;
 }
 
 main article img {
-  width: 330px;
-  height: 200px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  width: 100%;
+  display: block;
+  height: 12.5rem;
+  border-top-left-radius: 0.625rem;
+  border-top-right-radius: 0.625rem;
   margin-bottom: 2rem;
 }
 
 main article p.description {
-  font-family: "Manrope", sans-serif;
   font-weight: 700;
   color: hsl(217, 19%, 35%);
   margin-left: 2rem;
   margin-right: 2rem;
   margin-bottom: 1rem;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 main article p.content {
-  font-family: "Manrope", sans-serif;
   font-weight: 500;
-  font-size: 13px;
+  font-size: 0.813rem;
   line-height: 1.25rem;
   color: hsl(214, 17%, 51%);
   margin-left: 2rem;
   margin-right: 2.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 footer {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  align-items: center;
   margin-bottom: 1rem;
 }
 
 footer img.avatar {
   width: 3rem;
   border-radius: 100%;
+  margin-left: 2rem;
 }
 
-button {
+footer div {
+  margin-left: 1rem;
+  line-height: 1.5rem;
+}
+
+footer div span {
+  font-size: 0.813rem;
+  font-weight: 700;
+  color: hsl(217, 19%, 35%);
+}
+
+footer div p {
+  font-size: 0.813rem;
+  font-weight: 500;
+  color: hsl(214, 17%, 51%);
+}
+
+footer button {
   height: 2rem;
   width: 2rem;
   border-radius: 100%;
   border: none;
+  margin-left: 4rem;
+  cursor: pointer;
+}
+
+.share-popup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: hsl(217, 19%, 35%);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom-left-radius: 0.625rem;
+  border-bottom-right-radius: 0.625rem;
+}
+
+.share-popup .share {
+  margin-left: 2rem;
+  margin-right: 1rem;
+  letter-spacing: 0.3rem;
+  color: hsl(214, 17%, 51%);
+  font-weight: 700;
+}
+
+.share-popup .icon-page {
+  margin-right: 1rem;
+}
+
+.share-popup .icon-share {
+  width: auto;
+  filter: brightness(0) invert(1);
+}
+
+.share-popup button {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 100%;
+  border: none;
+  margin-left: 3rem;
+  cursor: pointer;
+  background-color: hsl(214, 17%, 51%);
+}
+
+.hidden {
+  display: none;
 }
